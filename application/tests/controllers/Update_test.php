@@ -15,3 +15,4 @@ class Update_test extends TestCase
 	{
 		$this->markTestIncomplete();
 	}
+}
