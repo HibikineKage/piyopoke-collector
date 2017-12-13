@@ -6,6 +6,13 @@
 		"abraham/twitteroauth": "^0.7.4"
 	},
 	"require-dev": {
-		"mikey179/vfsStream": "1.1.*"
+		"mikey179/vfsStream": "1.1.*",
+		"kenjis/ci-phpunit-test": "^0.15.0",
+		"phpunit/phpunit": "5.7.*"
+	},
+	"scripts": {
+		"unittest": [
+			"./vendor/bin/phpunit"
+		]
 	}
 }

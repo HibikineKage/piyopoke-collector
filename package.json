@@ -1,0 +1,12 @@
+{
+  "name": "piyopoke-collector",
+  "version": "1.0.0",
+  "main": "public/index.js",
+  "repository": "git@github.com:HibikineKage/piyopoke-collector.git",
+  "author": "Hibikine Kage <goodsmile314159@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "deploy_test": "cd scripts && python -m unittest discover && cd ..",
+    "test": "cd application/tests; ../../vendor/bin/phpunit"
+  }
+}
