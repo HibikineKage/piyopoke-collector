@@ -15,4 +15,9 @@ class Twitter_test extends TestCase
 		
 		$this->assertCount(100, $tweets);
 	}
+	
+	public function test_get_all()
+	{
+		$this->markTestIncomplete();
+	}
 }

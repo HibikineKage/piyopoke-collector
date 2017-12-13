@@ -3,7 +3,12 @@ services:
   mysql:
     build: ./mysql
     environment:
+      MYSQL_DATABASE: piyopoke
       MYSQL_ROOT_PASSWORD: password
+    volumes:
+      - ../application/database/database.sql:/docker-entrypoint-initdb.d/database.sql
+    ports:
+      - '13306:3306'
     volumes:
       - db:/var/lib/mysql
   php:

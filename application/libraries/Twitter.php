@@ -26,4 +26,25 @@ class Twitter {
 		}
 		return null;
 	}
+	
+	/**
+     * 再帰的に、ダウンロードできなくなるまでgetを行う。
+     * @param $user_token
+     * @param $user_secret
+     * @param $path
+     * @param $parameters
+     * @return array
+     */
+    private function get_all($path, $parameters) {
+        $data = [];
+        do {
+            $gotten_data = $this->connect->get($path, $parameters);
+            if (count($gotten_data) === 0) {
+                break;
+            }
+            $data = array_merge_recursive($data, $gotten_data);
+            $parameters['max_id'] = end($data)->id - 1;
+        } while(count($gotten_data) !== 0);
+        return $data;
+    }
 }

@@ -75,7 +75,7 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => (isset($_ENV['DATABASE_HOST']) ? $_ENV['DATABASE_HOST'] : '192.168.99.100:3306'),
+	'hostname' => (isset($_ENV['DATABASE_HOST']) ? $_ENV['DATABASE_HOST'] : '192.168.99.100:13306'),
 	'username' => 'root',
 	'password' => 'password',
 	'database' => 'piyopoke',

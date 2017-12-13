@@ -2,15 +2,10 @@
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Migration_Initalize_database extends CI_Migration
+class Migration_Initialize_database extends CI_Migration
 {
 	public function up()
-	{
-		$result = $this->dbforge->create_database($db['default']['database']);	
-		if (!$result) {
-			throw Exception('cannot create database');
-		}
-		
+	{		
 		$result = $this->dbforge->add_field([
 			'user_id' => [
 				'type' => 'BIGINT',
@@ -123,6 +118,8 @@ class Migration_Initalize_database extends CI_Migration
 	
 	public function down()
 	{
-		$this->dbforge->drop_database()
+		$this->dbforge->drop_table('media');
+		$this->dbforge->drop_table('tweets');
+		$this->dbforge->drop_table('users');
 	}
 }
