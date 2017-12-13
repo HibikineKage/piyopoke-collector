@@ -13,6 +13,9 @@
 	"scripts": {
 		"unittest": [
 			"./vendor/bin/phpunit"
+		],
+		"migrate": [
+			"php ./public/index.php migrate"
 		]
 	}
 }
