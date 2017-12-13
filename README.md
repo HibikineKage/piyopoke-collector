@@ -22,3 +22,18 @@ docker-compose up -d
 ```
 composer unittest
 ```
+
+# Link
+[Circle CI](https://circleci.com/gh/HibikineKage/piyopoke-collector)
+
+# Environment
+* JavaScript
+  - npm
+  - yarn
+* PHP 7.1/7.2
+  - composer
+  - CodeIgniter3
+  - PHPUnit
+* Docker
+  - Docker Compose
+* CircleCI
