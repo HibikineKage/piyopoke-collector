@@ -19,7 +19,7 @@ class UsersModel extends TestCase
 			'display_name' => 'candy_candy_bot',
 		]];
 		
-		$add_user_ids = array_column($add_user_ids, 'user_id');
+		$add_user_ids = array_column($add_users, 'user_id');
 		
 		$this->obj->add_users($add_users);
 		$users = $this->obj->get_users($add_user_ids);

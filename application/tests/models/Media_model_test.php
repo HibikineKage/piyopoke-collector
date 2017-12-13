@@ -32,7 +32,7 @@ class Media_model_test extends TestCase
 		
 		$this->obj->add_media($add_media);
 		
-		$media = $this->obj->get_media($media_id);
+		$media = $this->obj->get_media($media_ids);
 		
 		$this->assertEquals($add_media, $media);
 	}
