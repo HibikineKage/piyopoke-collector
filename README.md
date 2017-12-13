@@ -1,4 +1,5 @@
 # piyopoke-collector
+[![CircleCI](https://circleci.com/gh/HibikineKage/piyopoke-collector/tree/develop.svg?style=svg)](https://circleci.com/gh/HibikineKage/piyopoke-collector/tree/develop)
 
 collect twitter images tagged #ぴよポケワンドロ.
 
